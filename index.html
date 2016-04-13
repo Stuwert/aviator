@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Aviator by Stuwert</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/Stuwert/aviator">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Aviator</h1>
+            <h2>A compelling prototype for an airplane web-portal.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Stuwert/aviator/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Stuwert/aviator/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="aviator" class="anchor" href="#aviator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aviator</h1>
+
+<h2>
+<a id="the-why" class="anchor" href="#the-why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Why</h2>
+
+<p>Why make a website for air travel?  Because air travel is a terrible User Experience.  You're trapped in a flying tube for 2-4 hours (usually, sometimes even more), and are simultaneously isolated from most everyone else around you by the fact that you're all trying to ignore that you're in said flying metal tube.</p>
+
+<p>At the same time, there's an enormous opportunity for location-based, digital experiences.  My goal was to create a web-portal the satisfied many of the same needs that current airplane web-portals had while introducing new experiences that aren't available anywhere else.</p>
+
+<h2>
+<a id="the-what" class="anchor" href="#the-what" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The What</h2>
+
+<p>I designed a new web portal for an in-flight experiences. It has things like</p>
+
+<ul>
+<li>Movies</li>
+<li>Articles (the SkyMag, for your phone!)</li>
+<li>Games (more on that later)</li>
+<li>In-seat Ordering/Help Requests</li>
+<li>Flight Information </li>
+</ul>
+
+<p>While the majority of this is already accessible on a "modern" plane website, it's incredibly difficult to access the information and the experiences provided tend to be incredibly unexciting.</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features:</h2>
+
+<ul>
+<li><p>Movies and TV Shows: 
+These will be accessible from the hard-drive of the machine, without connecting to the internet, like your normal experience.</p></li>
+<li><p>Articles
+The sky mag will also be available via the </p></li>
+</ul>
+
+<p>-Utilize Existing Mileage Account Repo</p>
+
+<p>The mongo database references an API hosted on Heroku that uses postgres and bcrypt to validate the user.  Then the user information is saved to the mongodb for reference during the flight.  This reduces the number of outgoing requests from the plane while allowing the raspberry pi to have a lower overhead for what user information it has to store at any given time. </p>
+
+<p>-Sockets Game</p>
+
+<p>Players can play a sockets game with one another to collaboratively while they're on the plane.  The currents sockets game is sheep herding focused, but other games could easily be implemented on the server. </p>
+
+<ul>
+<li>Food Ordering + Help Requests</li>
+</ul>
+
+<h3>
+<a id="future-features" class="anchor" href="#future-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future Features</h3>
+
+<ul>
+<li><p>Save What You Do (While You Do it)</p></li>
+<li><p>Email what you did</p></li>
+<li><p>Data dump at the end of flights</p></li>
+<li><p>Data retrieval at the beginning of the flight.</p></li>
+</ul>
+
+<h3>
+<a id="installation-steps" class="anchor" href="#installation-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation Steps</h3>
+
+<p>Will go here.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/Stuwert">Stuwert</a> can be found on <a href="https://github.com/Stuwert/aviator">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
